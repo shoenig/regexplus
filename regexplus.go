@@ -14,7 +14,7 @@ type Map map[string]string
 // a Map from keys (names of groups) to values (matches).
 //
 // Example:
-//   re := regexp.MustCompile(`(?<foo>[a-z]+)-(?P<bar>[0-9]+)`)
+//   re := regexp.MustCompile(`(?P<foo>[a-z]+)-(?P<bar>[0-9]+)`)
 //   m := FindNamedSubmatches(re, "abc-123")
 //   m == Map{"foo":"abc", "bar":"123"}
 func FindNamedSubmatches(re *regexp.Regexp, s string) Map {
