@@ -1,19 +1,30 @@
 package regexplus
 
 import (
+	"reflect"
 	"regexp"
 	"testing"
-
-	"github.com/stretchr/testify/require"
 )
+
+func eqMap(t *testing.T, exp, got Map) {
+	if !reflect.DeepEqual(exp, got) {
+		t.Fatalf("expected %v, got %v", exp, got)
+	}
+}
+
+func eqInt(t *testing.T, exp, got int) {
+	if exp != got {
+		t.Fatalf("expected %d, got %d", exp, got)
+	}
+}
 
 func Test_Map(t *testing.T) {
 	try := func(r *regexp.Regexp, input string, exp Map) {
 		m := FindNamedSubmatches(r, input)
 		if len(exp) == 0 {
-			require.Equal(t, 0, len(m))
+			eqInt(t, 0, len(m))
 		} else {
-			require.Equal(t, exp, m)
+			eqMap(t, exp, m)
 		}
 	}
 
