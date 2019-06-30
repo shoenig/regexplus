@@ -1,5 +1,5 @@
 // Package regexplus provides additional convenience functions over regexp.
-package regexplus
+package regexplus // import "go.gophers.dev/pkgs/regexplus"
 
 import (
 	"regexp"
