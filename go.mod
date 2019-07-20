@@ -1,3 +1,3 @@
-module go.gophers.dev/pkgs/regexplus
+module gophers.dev/pkgs/regexplus
 
 go 1.12
