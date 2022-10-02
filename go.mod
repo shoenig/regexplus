@@ -1,3 +1,3 @@
-module gophers.dev/pkgs/regexplus
+module github.com/shoenig/regexplus
 
-go 1.12
+go 1.19
