@@ -3,6 +3,7 @@ regexplus
 
 Extended `regexp` functions, beyond the standard library
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/shoenig/regexplus.svg)](https://pkg.go.dev/github.com/shoenig/regexplus)
 [![GitHub](https://img.shields.io/github/license/shoenig/regexplus.svg)](LICENSE)
 
 # Project Overview
